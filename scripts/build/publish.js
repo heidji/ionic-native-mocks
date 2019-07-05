@@ -7,7 +7,7 @@ const fs = require('fs-extra-promise').useFs(require('fs-extra')),
 
 
 const ROOT = path.resolve(path.join(__dirname, '../../')),
-  DIST = path.resolve(ROOT, 'dist', '@ionic-native-mocks');
+  DIST = path.resolve(ROOT, 'dist', '@heidji-native-mocks');
 
 const FLAGS = '--access public'; // add any flags here if you want... (example: --tag alpha)
 
@@ -23,7 +23,7 @@ PACKAGES.forEach(packageName => {
 
   QUEUE.push(done => {
     if (packageName !== '.DS_store' ) {
-    console.log(`Publishing @ionic-native-mocks/${packageName}`);
+    console.log(`Publishing @heidji-native-mocks/${packageName}`);
     const packagePath = path.resolve(DIST, packageName);
     exec(`npm publish ${packagePath} ${FLAGS}`)
       .then(() => done())

@@ -1,6 +1,6 @@
 {
-  "name": "ionic-native-mocks",
-  "version": "2.0.12",
+  "name": "heidji-native-mocks",
+  "version": "0.0.1",
   "description": "Mocks for Ionic Native for Cordova and Ionic with TypeScript, ES6+, Promise and Observable support",
   "author": "Chris Griffith <chris.griffith@gmail.com> (https://aj-software.com)",
   "homepage": "https://github.com/chrisgriffith/ionic-native-mocks#readme",

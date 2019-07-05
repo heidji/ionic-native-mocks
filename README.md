@@ -1,5 +1,7 @@
 # Ionic Native Mocks
 
+**THIS IS A MODIFIED PACKAGE AIMED TO MAKE MORE FREQUENT BUILDS THAN THE ORIGINAL REP** -heidji
+
 Ionic Native Mocks are designed to be used as placeholders during development for the actual Ionic Native modules. [Ionic Native](https://github.com/ionic-team/ionic-native) is a curated set of wrappers for [Apache Cordova](https://cordova.apache.org/) plugins that make adding any native functionality you need to your [Ionic](https://ionicframework.com/) mobile application easier.
 
 Ionic Native wraps plugin callbacks in a Promise or Observable, providing a common interface for all plugins and making it easy to use plugins with Angular change detection.

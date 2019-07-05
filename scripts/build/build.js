@@ -7,12 +7,12 @@ const fs = require('fs-extra-promise').useFs(require('fs-extra')),
 
 // Constants for the build process. Paths and JSON files templates
 const ROOT = path.resolve(path.join(__dirname, '../../')), // root ionic-native directory
-  PLUGINS_PATH = path.resolve(ROOT, 'src/@ionic-native-mocks/plugins'), // path to plugins source files
+  PLUGINS_PATH = path.resolve(ROOT, 'src/@heidji-native-mocks/plugins'), // path to plugins source files
   CORE_PACKAGE_JSON = require(path.resolve(__dirname, 'core-package.json')), // core package.json
   PLUGIN_PACKAGE_JSON = require(path.resolve(__dirname, 'plugin-package.json')), // plugin package.json template
   PLUGIN_TS_CONFIG = require(path.resolve(__dirname, 'tsconfig-plugin.json')), // plugin tsconfig template
   BUILD_TMP = path.resolve(ROOT, '.tmp'), // tmp directory path
-  BUILD_DIST_ROOT = path.resolve(ROOT, 'dist/@ionic-native-mocks'), // dist directory root path
+  BUILD_DIST_ROOT = path.resolve(ROOT, 'dist/@heidji-native-mocks'), // dist directory root path
   BUILD_CORE_DIST = path.resolve(BUILD_DIST_ROOT, 'core'); // core dist directory path
 
 
@@ -101,7 +101,7 @@ const addPluginToQueue = pluginName => {
           // clone package.json
           const packageJson = JSON.parse(JSON.stringify(PLUGIN_PACKAGE_JSON));
 
-          packageJson.name = `@ionic-native-mocks/${pluginName}`;
+          packageJson.name = `@heidji-native-mocks/${pluginName}`;
           packageJson.version = IONIC_NATIVE_VERSION;
 
           return fs.writeJsonAsync(path.resolve(BUILD_DIST_ROOT, pluginName, 'package.json'), packageJson);
